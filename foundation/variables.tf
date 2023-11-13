@@ -19,3 +19,8 @@ variable "services" {
   type        = list(string)
   description = "List of Google Cloud Services and APIs to enable for the project"
 }
+
+variable "network" {
+  type        = string
+  description = "Name of the network (Virtual Private Network) to contain created resources"
+}
