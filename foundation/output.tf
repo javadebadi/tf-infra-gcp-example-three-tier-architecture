@@ -15,3 +15,7 @@ output "health_checkers_ipv4" {
 output "iap_forwarders_ipv4" {
     value = data.google_netblock_ip_ranges.iap_forwarders.cidr_blocks_ipv4
 }
+
+output "service_account_email" {
+  value = google_service_account.this.email
+}

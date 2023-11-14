@@ -16,3 +16,4 @@ subnets = [
   },
 ]
 sa_name = "application-server-sa"
+roles = ["secretmanager.secretAccessor", "cloudsql.client"]

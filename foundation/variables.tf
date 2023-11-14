@@ -37,3 +37,8 @@ variable "sa_name" {
   type = string
   description = "Name of the Service Account for this infrastructure"
 }
+
+variable "roles" {
+  type = list(string)
+  description = "Name of the IAM roles to be assigned for the service account"
+}
