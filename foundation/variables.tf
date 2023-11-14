@@ -32,3 +32,8 @@ variable "subnets" {
     ip_cidr_range = string
   }))
 }
+
+variable "sa_name" {
+  type = string
+  description = "Name of the Service Account for this infrastructure"
+}

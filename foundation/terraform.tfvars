@@ -15,3 +15,4 @@ subnets = [
     ip_cidr_range = "192.168.2.0/24"
   },
 ]
+sa_name = "application-server-sa"
