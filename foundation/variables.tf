@@ -24,3 +24,11 @@ variable "network" {
   type        = string
   description = "Name of the network (Virtual Private Network) to contain created resources"
 }
+
+variable "subnets" {
+  type        = list(object({
+    name          = string
+    region        = string
+    ip_cidr_range = string
+  }))
+}
