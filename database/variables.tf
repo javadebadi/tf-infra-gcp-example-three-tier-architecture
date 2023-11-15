@@ -14,3 +14,8 @@ variable "zone" {
   description = "Default Zone"
   default     = "us-central1-a"
 }
+
+variable "db_settings" {
+  description = "Map of the various DB Settings"
+  type        = map(any)
+}
